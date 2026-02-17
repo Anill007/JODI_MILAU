@@ -1,6 +1,7 @@
 # 🧩 JODI MILAU
 # look for .vsix file download and install in vsCode.
 # Type command (ctrl + shift + p) -> "Jodi Milau" -> ENJOY ❤️❤️
+### Love your support if you are here to install this extension
 
 > **Flip Tiles → Memorize → Match Pairs → Win Game**
 
