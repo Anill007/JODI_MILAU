@@ -162,7 +162,7 @@ function init(num) {
   function showGameLost() {
     document.querySelector(".win").style.display = "flex";
     document.querySelector(".win-content").classList.remove('win-bg');
-    document.querySelector(".win-loose-txt").innerText = "You loose!!!";
+    document.querySelector(".win-loose-txt").innerText = "You Failed!!!";
   }
 
   // add timer if not present on first click
