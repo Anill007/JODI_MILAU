@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build Output
+# We ignore the 'out' or 'dist' folder because it's generated from your 'src'
+out/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Environment/Secrets
+.env
+
+# Optional: If you don't want to share your personal VS Code tasks/settings
+# .vscode/

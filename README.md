@@ -1,0 +1,1 @@
+Memorize tiles -> Match Pairs -> Win Game
