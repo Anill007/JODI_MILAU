@@ -1,5 +1,6 @@
 # 🧩 JODI MILAU
 # look for .vsix file download and install in vsCode.
+# Type command (ctrl + shift + p) -> "Jodi Milau" -> ENJOY ❤️❤️
 
 > **Flip Tiles → Memorize → Match Pairs → Win Game**
 
@@ -14,7 +15,7 @@ To install the extension manually using the `.vsix` bundle:
 2. Press `Ctrl + Shift + P` (or `Cmd + Shift + P` on Mac) to open the Command Palette.
 3. Type and select: **"Extensions: Install from VSIX..."**
 4. Choose the file: `jodi-milau-0.0.1.vsix`.
-5. After the success notification, open the Command Palette again and search for **"Start Memory Match Game"** to play.
+5. After the success notification, open the Command Palette again and search for **"Jodi Milau"** to play.
 
 > [!IMPORTANT]  
 > **Can't find the installer?** Check your root project folder or the `out/` directory for the `.vsix` output after running the package command.
