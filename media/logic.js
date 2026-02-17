@@ -13,7 +13,7 @@ function init(num) {
     return apiImagesId[i];
   }
 
-  let difficulty = difficultyChoice[num-1];
+  let difficulty = difficultyChoice[num - 1];
   let containers = [];
   let clickedContainerIndex = {
     current: null,
@@ -88,7 +88,7 @@ function init(num) {
         !timer.pause
       ) {
         document.querySelector(".play-pause").style.display = "block";
-        document.querySelector(".play-pause").src = "img/pause.png";
+        document.querySelector(".play-pause").src = window.iconPause;
         container.element.classList.add("flip");
         container.flipped = true;
         clickedContainerIndex.previous = clickedContainerIndex.current;
@@ -225,15 +225,19 @@ function init(num) {
 // show paused alert if paused
 // change icon of play/pause button at bottom corner of screen
 function toggleTimer() {
-    timer.pause = !timer.pause;
-    const btn = document.querySelector(".play-pause");
-    if (timer.pause) {
-        btn.src = window.iconPlay;
-        document.querySelector(".alert").style.display = "flex";
-    } else {
-        btn.src = window.iconPause;
-        document.querySelector(".alert").style.display = "none";
-    }
+  timer.pause = !timer.pause;
+  const playPauseImg = document.querySelector(".play-pause");
+  const alertSection = document.querySelector(".alert");
+
+  if (timer.pause) {
+    // Show the "Play" icon because the game is currently paused
+    playPauseImg.src = window.iconPlay;
+    alertSection.style.display = "flex";
+  } else {
+    // Show the "Pause" icon because the game is currently running
+    playPauseImg.src = window.iconPause;
+    alertSection.style.display = "none";
+  }
 }
 
 // hide alert on cancel
@@ -244,7 +248,13 @@ function cancel() {
 // on reset clear timers and reload window
 function resetGame() {
   resetTimer();
-  window.location.reload();
+
+  document.querySelector(".win").style.display = "none";
+  document.querySelector(".alert").style.display = "none";
+
+  document.querySelector(".table").innerHTML = "";
+
+  init(1);
 }
 
 // clear interval and set default timer values
